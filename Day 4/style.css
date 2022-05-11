@@ -1,0 +1,97 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #E56262;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circle-1,
+.circle-2,
+.circle-3 {
+  position: absolute;
+  top: 50%;
+    left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.circle-1 {
+  height: 100px;
+  width: 100px;
+  animation: circle_1_animation 2s ease-in-out infinite alternate;
+}
+
+.circle-2 {
+  height: 70px;
+    width: 70px;
+    background-color: #fff;
+    animation: circle_2_animation 2s  ease-in-out infinite alternate;
+}
+.circle-3 {
+  height: 40px;
+    width: 40px;
+    background-color: #fff;
+    animation: circle_3_animation 2s ease-in-out infinite alternate;
+}
+
+@keyframes circle_1_animation {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+  25%, 75% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+}
+
+@keyframes circle_2_animation {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+  25%, 75% {
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.3);
+    transform: translate(-50%, -50%) scale(0);
+  }
+}
+
+@keyframes circle_3_animation {
+  0% {
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+    transform: translate(-50%, -50%) scale(0);
+  }
+  25%, 75% {
+    box-shadow: 2px 2px 3px 2px rgba(0, 0, 0, 0.2);
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+    transform: translate(-50%, -50%) scale(0);
+  }
+}

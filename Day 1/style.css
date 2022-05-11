@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: rgb(67, 58, 160);
+  background: linear-gradient(
+    45deg,
+    rgba(67, 58, 160, 1) 0%,
+    rgba(78, 197, 202, 1) 100%
+  );
+  color: #fff;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.number {
+  position: relative;
+  height: 100px;
+  width: 200px;
+}
+
+.first-one {
+  position: absolute;
+  background-color: #fff;
+  height: 40px;
+  width: 20px;
+  transform: rotate(50deg);
+  /* border-radius: 5px; */
+  z-index: 1;
+  box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
+}
+
+.second-one {
+  z-index: 10;
+  position: absolute;
+  background-color: #fff;
+  height: 100px;
+  width: 20px;
+  left: 15px;
+}
+
+.first-zero,
+.second-zero {
+  z-index: 8;
+  position: absolute;
+  /* background-color: #fff; */
+  height: 100px;
+  width: 100px;
+  left: 28px;
+  border-radius: 50%;
+  box-sizing: border-box;
+
+  border: #fff 20px solid;
+  box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
+}
+
+.second-zero {
+  z-index: 6;
+  left: 110px;
+}
+
+.big {
+  /* width: 200px; */
+  font-size: 5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.small {
+  font-size: 2rem;
+}
