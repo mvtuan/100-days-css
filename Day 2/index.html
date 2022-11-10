@@ -22,9 +22,9 @@
     </div>
 </body>
 <script>
-    ${'.hamburger'}.bind('click', function() {
-        // ${}
-        console.log("jQuery")
+    $('.hamburger').bind('click', function() {
+        // $(this).toggleClass('active');
+        $(this).find('div').removeClass('no-animation');
     })
 </script>
 </html>
