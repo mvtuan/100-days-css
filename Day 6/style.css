@@ -1,0 +1,85 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+:root {
+  --white: #fff;
+  --brown: #786450;
+}
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container{
+  display: flex;
+  height: 100%;
+}
+
+.info {
+  flex: 1;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar{
+  border-radius: 50%;
+  background-color: #000;
+}
+
+img {
+  object-fit: cover;
+}
+
+.button-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+button {
+  border-radius: 20px;
+  width: 150px;
+  height: 40px;
+  border: none;
+}
+
+.social{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  gap:1px
+}
+
+.social-item {
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--brown);
+  margin-bottom: 10px solid var(--white);
+}
+
+.figure {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.unit {
+  font-weight: lighter;
+}
